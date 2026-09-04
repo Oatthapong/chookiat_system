@@ -127,8 +127,12 @@ class AuthController extends Controller
 
     /**
      * Show the password reset form.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  string  $token
+     * @return \Illuminate\Contracts\View\View|\Illuminate\Http\RedirectResponse
      */
-    public function showResetPasswordForm(Request $request, $token)
+    public function showResetPasswordForm(Request $request, string $token)
     {
         $email = $request->query('email');
 
