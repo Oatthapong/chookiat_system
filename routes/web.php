@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\InstallmentController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -26,4 +27,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+
+    // 2.5 ระบบคำนวณยอดผ่อน
+    Route::get('/installments', [InstallmentController::class, 'index'])->name('installments.index');
+    Route::post('/installments/calculate', [InstallmentController::class, 'calculate'])->name('installments.calculate');
 });

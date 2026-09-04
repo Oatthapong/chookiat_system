@@ -127,14 +127,14 @@
                                 <i class="bi bi-calculator text-success fs-4"></i>
                                 <h5 class="fw-bold mb-0">ระบบคำนวณยอดผ่อนชำระ</h5>
                             </div>
-                            <span class="badge bg-secondary">หัวข้อถัดไป</span>
+                            <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25">พร้อมใช้งาน</span>
                         </div>
                         <p class="text-secondary small">
                             คำนวณยอดผ่อน 12–84 งวด พร้อมระบบ Highlight งวดที่เลือก และ Alert ตรวจสอบยอดเงินแบบ Realtime
                         </p>
-                        <button class="btn btn-outline-success btn-sm disabled">
+                        <a href="{{ route('installments.index') }}" class="btn btn-outline-success btn-sm">
                             <i class="bi bi-arrow-right me-1"></i> เข้าสู่หน้าคำนวณค่างวด
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
