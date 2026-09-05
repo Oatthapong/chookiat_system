@@ -106,14 +106,14 @@
                                 <i class="bi bi-car-front text-primary fs-4"></i>
                                 <h5 class="fw-bold mb-0">ระบบจัดการคลังรถยนต์ (CRUD)</h5>
                             </div>
-                            <span class="badge bg-secondary">หัวข้อถัดไป</span>
+                            <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25">พร้อมใช้งาน</span>
                         </div>
                         <p class="text-secondary small">
                             ระบบจัดการข้อมูลรถยนต์ (เพิ่ม ลบ แก้ไข ดูรายละเอียด) ด้วย jQuery AJAX แบบไม่ Refresh หน้าจอ
                         </p>
-                        <button class="btn btn-outline-primary btn-sm disabled">
+                        <a href="{{ route('cars.index') }}" class="btn btn-outline-primary btn-sm">
                             <i class="bi bi-arrow-right me-1"></i> เข้าสู่ระบบคลังรถ
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
