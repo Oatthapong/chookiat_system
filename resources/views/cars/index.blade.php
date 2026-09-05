@@ -91,6 +91,9 @@
                     <i class="bi bi-calculator"></i>
                     <span>คำนวณค่างวด</span>
                 </a>
+                <a href="{{ route('dashboard') }}" class="btn btn-outline-secondary btn-sm d-flex align-items-center gap-1">
+                    <i class="bi bi-arrow-left"></i> กลับสู่ Dashboard
+                </a>
             </div>
         </div>
 
