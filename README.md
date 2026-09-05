@@ -1,4 +1,4 @@
-# chookiat_system
+# chookiat_system 
 
 ## Tech Stack ที่ใช้
 | งานด้าน | เทคโนโลยี / เครื่องมือ | |
@@ -15,7 +15,7 @@
 | admin | password123 | admin |
 | user1 | password123 | user |
 | test | 123456 | admin |
-
+ไฟล์ sql chookiat_database (1).sql พร้อมใช้งาน
 ---
 ## 🚀 ขั้นตอนการติดตั้งและเปิดใช้งาน (Installation)
 ```bash
