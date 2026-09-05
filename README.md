@@ -15,6 +15,9 @@
 | admin | password123 | admin |
 | user1 | password123 | user |
 | test | 123456 | admin |
+
+---
+## Database
 ไฟล์ sql chookiat_database (1).sql พร้อมใช้งาน
 ---
 ## 🚀 ขั้นตอนการติดตั้งและเปิดใช้งาน (Installation)
