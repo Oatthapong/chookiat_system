@@ -8,10 +8,10 @@
         <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-3">
             <div>
                 <h3 class="fw-bold text-dark mb-1 d-flex align-items-center gap-2">
-                    <i class="bi bi-people-fill text-primary"></i> ระบบจัดการผู้ใช้งาน (User Management)
+                    <i class="bi bi-people-fill text-primary"></i> จัดการผู้ใช้งาน (User Management)
                 </h3>
                 <p class="text-secondary mb-0">
-                    ข้อกำหนด 2.4: จัดการสิทธิ์การใช้งาน, รีเซ็ตข้อมูลผู้ใช้ และระงับ/ยกเลิกการเข้าใช้งานระบบ
+                    จัดการสิทธิ์การใช้งาน, รีเซ็ตข้อมูลผู้ใช้ และระงับ/ยกเลิกการเข้าใช้งานระบบ
                 </p>
             </div>
             <a href="{{ route('dashboard') }}" class="btn btn-outline-secondary btn-sm d-flex align-items-center gap-1">

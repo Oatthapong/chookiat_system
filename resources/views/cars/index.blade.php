@@ -77,7 +77,7 @@
                     <i class="bi bi-car-front-fill text-primary me-2"></i>ระบบจัดการคลังรถยนต์ (Car Inventory)
                 </h3>
                 <p class="text-secondary small mb-0">
-                    จัดการข้อมูลรถยนต์ (เพิ่ม ลบ แก้ไข ค้นหา) ด้วย <strong>jQuery AJAX</strong> โดยไม่ Refresh หน้าเว็บ
+                    จัดการข้อมูลรถยนต์ (เพิ่ม ลบ แก้ไข ค้นหา)
                 </p>
             </div>
             <div class="d-flex align-items-center gap-2">

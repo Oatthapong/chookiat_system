@@ -106,10 +106,11 @@
                                 <i class="bi bi-car-front text-primary fs-4"></i>
                                 <h5 class="fw-bold mb-0">จัดการคลังรถยนต์</h5>
                             </div>
-                            <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25">พร้อมใช้งาน</span>
+                            <span
+                                class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25">พร้อมใช้งาน</span>
                         </div>
                         <p class="text-secondary small">
-                            ระบบจัดการข้อมูลรถยนต์ (เพิ่ม ลบ แก้ไข ดูรายละเอียด) ด้วย jQuery AJAX แบบไม่ Refresh หน้าจอ
+                            ระบบจัดการข้อมูลรถยนต์ (เพิ่ม ลบ แก้ไข ดูรายละเอียด)
                         </p>
                         <a href="{{ route('cars.index') }}" class="btn btn-outline-primary btn-sm">
                             <i class="bi bi-arrow-right me-1"></i> เข้าสู่ระบบคลังรถ
@@ -127,10 +128,11 @@
                                 <i class="bi bi-calculator text-success fs-4"></i>
                                 <h5 class="fw-bold mb-0">คำนวณยอดผ่อนชำระ</h5>
                             </div>
-                            <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25">พร้อมใช้งาน</span>
+                            <span
+                                class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25">พร้อมใช้งาน</span>
                         </div>
                         <p class="text-secondary small">
-                            คำนวณยอดผ่อน 12–84 งวด พร้อมระบบ Highlight งวดที่เลือก และ Alert ตรวจสอบยอดเงินแบบ Realtime
+                            คำนวณยอดผ่อน 12–84 งวด
                         </p>
                         <a href="{{ route('installments.index') }}" class="btn btn-outline-success btn-sm">
                             <i class="bi bi-arrow-right me-1"></i> เข้าสู่หน้าคำนวณค่างวด
@@ -140,26 +142,28 @@
             </div>
 
             @if (Auth::user()->isAdmin())
-            <!-- User Management Module (Admin Only) -->
-            <div class="col-lg-4 col-md-12">
-                <div class="card main-card h-100 border-start border-danger border-4">
-                    <div class="card-body p-4">
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                            <div class="d-flex align-items-center gap-2">
-                                <i class="bi bi-people-fill text-danger fs-4"></i>
-                                <h5 class="fw-bold mb-0">ระบบจัดการผู้ใช้งาน</h5>
+                <!-- User Management Module (Admin Only) -->
+                <div class="col-lg-4 col-md-12">
+                    <div class="card main-card h-100 border-start border-danger border-4">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div class="d-flex align-items-center gap-2">
+                                    <i class="bi bi-people-fill text-danger fs-4"></i>
+                                    <h5 class="fw-bold mb-0">ระบบจัดการผู้ใช้งาน</h5>
+                                </div>
+                                <span
+                                    class="badge bg-danger bg-opacity-10 text-danger border border-danger border-opacity-25">Admin
+                                    เท่านั้น</span>
                             </div>
-                            <span class="badge bg-danger bg-opacity-10 text-danger border border-danger border-opacity-25">Admin เท่านั้น</span>
+                            <p class="text-secondary small">
+                                รีเซ็ตข้อมูลผู้ใช้, รีเซ็ตรหัสผ่าน และยกเลิกการใช้งาน User Login เพื่อระงับการเข้าสู่ระบบ
+                            </p>
+                            <a href="{{ route('users.index') }}" class="btn btn-outline-danger btn-sm">
+                                <i class="bi bi-arrow-right me-1"></i> เข้าสู่ระบบจัดการผู้ใช้
+                            </a>
                         </div>
-                        <p class="text-secondary small">
-                            รีเซ็ตข้อมูลผู้ใช้, รีเซ็ตรหัสผ่าน และยกเลิกการใช้งาน User Login เพื่อระงับการเข้าสู่ระบบ
-                        </p>
-                        <a href="{{ route('users.index') }}" class="btn btn-outline-danger btn-sm">
-                            <i class="bi bi-arrow-right me-1"></i> เข้าสู่ระบบจัดการผู้ใช้
-                        </a>
                     </div>
                 </div>
-            </div>
             @endif
         </div>
     </div>
