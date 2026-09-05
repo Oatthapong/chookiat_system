@@ -120,6 +120,13 @@
                                 <i class="bi bi-calculator me-1"></i> คำนวณค่างวด
                             </a>
                         </li>
+                        @if (Auth::user()->isAdmin())
+                            <li class="nav-item">
+                                <a class="nav-link {{ request()->routeIs('users.*') ? 'active' : '' }}" href="{{ route('users.index') }}">
+                                    <i class="bi bi-people-fill me-1"></i> จัดการผู้ใช้งาน
+                                </a>
+                            </li>
+                        @endif
                     </ul>
                 </div>
             </div>
