@@ -47,6 +47,7 @@ class User extends Authenticatable
     {
         return [
             'is_active' => 'boolean',
+            // hash password auto เมื่อมีการ save 
             'password' => 'hashed',
         ];
     }

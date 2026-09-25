@@ -107,7 +107,7 @@
                 <div class="brand-icon">
                     <i class="bi bi-car-front-fill"></i>
                 </div>
-                <h4 class="fw-bold mb-1">ชูเกียรติลิสซิ่ง</h4>
+                <h4 class="fw-bold mb-1">ระบบจัดการคลังรถยนต์</h4>
                 <p class="mb-0 text-white-50 small">ระบบจัดการคลังรถยนต์และคำนวณค่างวด</p>
             </div>
 
@@ -158,7 +158,8 @@
                             <label for="password" class="form-label fw-semibold text-secondary small mb-0">
                                 รหัสผ่าน (Password) <span class="text-danger">*</span>
                             </label>
-                            <a href="{{ route('password.request') }}" class="small text-decoration-none text-primary fw-medium" tabindex="-1">
+                            <a href="{{ route('password.request') }}"
+                                class="small text-decoration-none text-primary fw-medium" tabindex="-1">
                                 ลืมรหัสผ่าน?
                             </a>
                         </div>
@@ -192,9 +193,9 @@
                 </form>
 
                 <div class="text-center mt-4 pt-3 border-top">
-                    <small class="text-muted">
-                        &copy; {{ date('Y') }} Chookiat Leasing Co., Ltd. All rights reserved.
-                    </small>
+                    <!--<small class="text-muted">
+                            &copy; {{ date('Y') }} Chookiat Leasing Co., Ltd. All rights reserved.
+                        </small>-->
                 </div>
             </div>
         </div>

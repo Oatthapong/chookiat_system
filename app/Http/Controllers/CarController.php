@@ -24,9 +24,9 @@ class CarController extends Controller
                 $keyword = trim($request->keyword);
                 $query->where(function ($q) use ($keyword) {
                     $q->where('car_code', 'like', "%{$keyword}%")
-                      ->orWhere('brand', 'like', "%{$keyword}%")
-                      ->orWhere('model', 'like', "%{$keyword}%")
-                      ->orWhere('license_plate', 'like', "%{$keyword}%");
+                        ->orWhere('brand', 'like', "%{$keyword}%")
+                        ->orWhere('model', 'like', "%{$keyword}%")
+                        ->orWhere('license_plate', 'like', "%{$keyword}%");
                 });
             }
 

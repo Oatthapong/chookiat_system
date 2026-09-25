@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'ลืมรหัสผ่าน | Chookiat Leasing')
+@section('title', 'ลืมรหัสผ่าน')
 
 @section('styles')
     <style>
@@ -84,7 +84,8 @@
                             <span class="fw-bold">{{ session('success') }}</span>
                         </div>
                         <p class="small text-muted mb-2">ระบบได้สร้างโทเค็นยืนยันความปลอดภัยสำหรับ
-                            <strong>{{ session('reset_email') }}</strong> เรียบร้อยแล้ว</p>
+                            <strong>{{ session('reset_email') }}</strong> เรียบร้อยแล้ว
+                        </p>
 
                         @if (session('reset_url'))
                             <div class="p-2 bg-white rounded border mt-2">
@@ -130,14 +131,14 @@
                                 <i class="bi bi-envelope-fill text-secondary"></i>
                             </span>
                             <input type="email" class="form-control @error('email') is-invalid @enderror" id="email"
-                                name="email" value="{{ old('email') }}" placeholder="example@chookiat.com" required
-                                autofocus autocomplete="email">
+                                name="email" value="{{ old('email') }}" placeholder="example@test.com" required autofocus
+                                autocomplete="email">
                         </div>
                         @error('email')
                             <div class="text-danger small mt-1">{{ $message }}</div>
                         @enderror
                         <div class="form-text small text-muted mt-1">
-                            เช่น <code>admin@chookiat.com</code> หรือ <code>user1@chookiat.com</code>
+                            เช่น <code>admin@test.com</code> หรือ <code>user1@test.com</code>
                         </div>
                     </div>
 
